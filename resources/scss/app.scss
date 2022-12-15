@@ -1,12 +1,20 @@
+@use '../scss/variables' as *;
+
 @import '~bootstrap/scss/bootstrap';
 
-a {
-    text-decoration: none;
-    color: black;
-}
+header {
+    a {
+        text-decoration: none;
+        color: $blacktext;
+        height: 40px;
+        padding-bottom: 45px;
 
-a.active {
-    color: blue;
+        &.active,
+        &:hover {
+            color: $bluelink;
+            border-bottom: 5px solid $bluelink;
+        }
+    }
 }
 
 img {
@@ -26,45 +34,67 @@ img {
             // left: 10px;
             bottom: -25px;
             padding: 20px 30px;
-            background-color: blue;
+            background-color: $bluelink;
             text-transform: uppercase;
-            color: white;
+            color: $whitetext;
             font-weight: bold;
             font-size: 25px;
         }
     }
 }
 
-main {
-    background-color: rgba(28, 28, 28);
-}
 
-.container-comics {
-    padding-top: 3.5rem;
-    padding-bottom: 8rem;
+.main {
+    background-color: $bgblack;
+   
+    .container-comics {
+        padding-top: 3.5rem;
+        padding-bottom: 7rem;
 
-    .comics-main {
-        padding: 1rem;
+        .comics-main {
+            padding: 1rem;
 
-        .row {
-            row-gap: 70px;
+            .row {
+                row-gap: 70px;
 
-            .my-card {
-                height: 200px;
-                width: calc(100% / 6);
-        
-                .img-box {
-                    height: 95%;
-                    overflow-y: hidden;
-                }
-        
-                p {
-                    margin-top: 15px;
-                    width: 85%;
+                .my-card {
+                    height: 200px;
+                    width: calc(100% / 6);
+            
+                    .img-box {
+                        height: 95%;
+                        overflow-y: hidden;
+                    }
+            
+                    p {
+                        margin-top: 15px;
+                        width: 85%;
+                    }
                 }
             }
         }
     }
 
-    
+    .btn-box {
+        display: flex;
+        justify-content: center;
+
+        button {
+            border: 0;
+            background-color: $bluelink;
+            padding: 10px 55px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            color: $whitetext;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background-color: $bluetext;
+            }
+        }
+    }
 }
+
+
