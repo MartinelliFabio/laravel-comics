@@ -97,4 +97,31 @@ img {
     }
 }
 
+.blue-banner {
+    background-color: $bluelink;
+
+    ul {
+        height: 150px;
+        padding: 0 25px;
+
+        li a {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $whitetext;
+            font-size: 0.9rem;
+            
+    
+            .logo-blue {
+                height: 6vh;
+            }
+    
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
+
 
