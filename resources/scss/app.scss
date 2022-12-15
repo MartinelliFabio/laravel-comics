@@ -14,8 +14,7 @@ img {
 }
 
 #jumbo {
- 
-    background: url('../img//images//jumbotron.jpg') no-repeat;
+    background: url('../img/images/jumbotron.jpg') no-repeat;
     background-size: cover;
 
     div.jumbo {
@@ -34,4 +33,38 @@ img {
             font-size: 25px;
         }
     }
+}
+
+main {
+    background-color: rgba(28, 28, 28);
+}
+
+.container-comics {
+    padding-top: 3.5rem;
+    padding-bottom: 8rem;
+
+    .comics-main {
+        padding: 1rem;
+
+        .row {
+            row-gap: 70px;
+
+            .my-card {
+                height: 200px;
+                width: calc(100% / 6);
+        
+                .img-box {
+                    height: 95%;
+                    overflow-y: hidden;
+                }
+        
+                p {
+                    margin-top: 15px;
+                    width: 85%;
+                }
+            }
+        }
+    }
+
+    
 }
