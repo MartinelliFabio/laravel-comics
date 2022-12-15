@@ -49,7 +49,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src="{{ Vite::asset('/resources/img/images/buy-dc-power-visa.svg') }}" alt="" class="logo-blue">
+                        <img src="{{ Vite::asset('/resources/img/images/buy-dc-power-visa.svg') }}" alt="" class="logo-blue-svg">
                         <span>Dc Power Visa</span>
                     </a>
                 </li>
