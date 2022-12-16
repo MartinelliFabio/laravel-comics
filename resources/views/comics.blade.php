@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="main">
+        <span>current series</span>
         <div class="container container-comics">
             <div class="comics-main">
                 <div class="row d-flex flex-wrap">

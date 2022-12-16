@@ -8,6 +8,7 @@ header {
         color: $blacktext;
         height: 40px;
         padding-bottom: 45px;
+        // font-size: ;
 
         &.active,
         &:hover {
@@ -28,11 +29,18 @@ img {
     div.jumbo {
         position: relative;
         height: 320px;
+    }
+}
 
-        span {
+
+.main {
+    background-color: $bgblack;
+    position: relative;
+
+    span {
             position: absolute;
-            // left: 10px;
-            bottom: -25px;
+            top: -37px;
+            left: 16%;
             padding: 20px 30px;
             background-color: $bluelink;
             text-transform: uppercase;
@@ -40,12 +48,6 @@ img {
             font-weight: bold;
             font-size: 25px;
         }
-    }
-}
-
-
-.main {
-    background-color: $bgblack;
    
     .container-comics {
         padding-top: 3.5rem;

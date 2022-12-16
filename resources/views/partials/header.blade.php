@@ -1,3 +1,7 @@
+<?php
+  $links = config('comics.navbar')
+?>
+
 <div class="d-flex bg-primary">
     <div class="container">
         <ul class="text-white d-flex list-unstyled justify-content-end m-0 f-size">
@@ -15,56 +19,11 @@
         </div>
         <nav class="navbar-nav container navbar-light">
             <ul class="d-flex list-unstyled justify-content-end gap-5 text-uppercase fw-bold m-0">
-                <li class="nav-item">
-                   <a class="{{Route::currentRouteName() == 'characters' ? 'active' : ''}}" href="{{route('characters')}}">
-                        Characters
-                    </a> 
-                </li>
-                <li>
-                   <a class=" {{Route::currentRouteName() == 'comics' ? 'active' : ''}}" href="{{route('comics')}}">
-                        Comics
-                    </a> 
-                </li>
-                <li>
-                   <a class=" {{Route::currentRouteName() == 'movies' ? 'active' : ''}}" href="{{route('movies')}}">
-                        Movies
-                    </a> 
-                </li>
-                <li>
-                   <a class=" {{Route::currentRouteName() == 'tv' ? 'active' : ''}}" href="{{route('tv')}}">
-                        Tv
-                    </a> 
-                </li>
-                <li>
-                   <a class=" {{Route::currentRouteName() == 'games' ? 'active' : ''}}" href="{{route('games')}}">
-                        Games
-                    </a> 
-                </li>
-                <li>
-                   <a class=" {{Route::currentRouteName() == 'collectibles' ? 'active' : ''}}" href="{{route('collectibles')}}">
-                        Collectibles
-                    </a> 
-                </li>
-                <li>
-                   <a class=" {{Route::currentRouteName() == 'videos' ? 'active' : ''}}" href="{{route('videos')}}">
-                        Videos
-                    </a> 
-                </li>
-                <li>
-                   <a class=" {{Route::currentRouteName() == 'fans' ? 'active' : ''}}" href="{{route('fans')}}">
-                        Fans
-                    </a> 
-                </li>
-                <li>
-                   <a class=" {{Route::currentRouteName() == 'news' ? 'active' : ''}}" href="{{route('news')}}">
-                        News
-                    </a> 
-                </li>
-                <li>
-                    <a class=" {{Route::currentRouteName() == 'shop' ? 'active' : ''}}" href="{{route('shop')}}">
-                        Shop
-                    </a>
-                </li>
+                @foreach ($links as $link)
+                    <li class="nav-item">
+                        <a class="{{Route::currentRouteName() == $link['text'] ? 'active' : ''}}"  href="{{$link['url'] == 'comics' ? '/' : $link['url']}}">{{$link['text']}}</a>
+                    </li>
+                @endforeach
             </ul>
         </nav>
     </div>
@@ -72,7 +31,7 @@
 
 <section id="jumbo">
     <div class="jumbo container">
-        <span>current series</span>
+        
     </div>
 </section>
 
