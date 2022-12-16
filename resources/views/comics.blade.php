@@ -6,10 +6,12 @@
         <div class="container container-comics">
             <div class="comics-main">
                 <div class="row d-flex flex-wrap">
-                    @foreach ($comics as $comic)
+                    @foreach ($comics as $key => $comic)
                     <div class="my-card">
                         <div class="img-box">
-                            <img src="{{$comic['thumb']}}" alt="">
+                            <a href="{{'/single-page' . $key}}">
+                                <img src="{{$comic['thumb']}}" alt="">
+                            </a>
                         </div>
                         <p class="text-white">{{$comic['series']}}</p>
                     </div>
