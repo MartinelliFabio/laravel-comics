@@ -16,11 +16,15 @@
 </head>
 
 <body>
-    @include('partials.header')
+    <div>
+        @include('partials.header')
+    </div>
         <main>
             @yield('content')
         </main>
-    @include('partials.footer')
+    <div>
+        @include('partials.footer')
+    </div>
 </body>
 
 </html>

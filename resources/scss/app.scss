@@ -2,12 +2,16 @@
 
 @import '~bootstrap/scss/bootstrap';
 
+body {
+    font-family: sans-serif;
+}
+
 header {
     a {
         text-decoration: none;
         color: $blacktext;
         height: 40px;
-        padding-bottom: 45px;
+        padding-bottom: 48px;
         // font-size: ;
 
         &.active,
@@ -260,6 +264,75 @@ footer {
         padding: 0 5px;
         font-size: 13px;
     }
+}
+
+h1 {
+    color: $bluetext;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container-available {
+    background-color: $green-bg;
+    font-weight: bold;
+    border-bottom: 1px solid #357739;
+
+    p {
+        display: inline-block;
+        margin: 0;
+        color: $greentext;
+    }
+
+    .available-price {
+        padding: 17px 25px 13px;
+    }
+
+    .price {
+        color: $whitetext;
+    }
+
+    .status {
+        margin-left: auto;
+    }
+
+    .available {
+        padding: 17px 25px 13px;
+    }
+
+    .check {
+        position: relative;
+        color: $whitetext;
+        text-decoration: none;
+        border-left: 1px solid black;
+        padding: 17px 25px 13px;
+        padding-right: 42px;
+        cursor: pointer;
+    }
+
+    .check:after {
+        content: ".";
+        display: block;
+        font-size: 0;
+        position: absolute;
+        right: 19px;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-top: 6px solid white;
+        border-right: 4px solid transparent;
+        border-bottom: 5px solid transparent;
+    }
+}
+
+.description {
+    color: $textgray;
+    font-size: 17px;
+}
+
+.adv {
+    margin-top: -70px;
+    color: $textgray;
 }
 
 

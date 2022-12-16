@@ -15,7 +15,7 @@
                         <ul class="p-0">
                             @foreach ($link['links'] as $list)
                             <li>
-                                <a href="{{$list['url']}}">{{$list['text']}}</a>
+                                <a class="text-capitalize" href="{{$list['url']}}">{{$list['text']}}</a>
                             </li>
                             @endforeach
                         </ul>

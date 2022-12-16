@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page-title', 'Laravel Comics - Comics')
+
 @section('content')
     <div class="main">
         <span>current series</span>
