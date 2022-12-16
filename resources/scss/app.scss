@@ -28,7 +28,7 @@ img {
 
     div.jumbo {
         position: relative;
-        height: 320px;
+        height: 400px;
     }
 }
 
@@ -228,5 +228,40 @@ footer {
         }
     }
 }
+
+.blue {
+    background-color: $blue;
+    height: 70px;
+    position: relative;
+}
+
+.box-single-img {
+    position: absolute;
+    bottom: 370px;
+    border: 1px solid $whitetext;
+
+    .comic {
+        position: absolute;
+        text-transform: uppercase;
+        background-color: $blue-single;
+        color: $whitetext;
+        padding: 0 5px;
+        font-size: 13px;
+    }
+
+    .view {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        text-transform: uppercase;
+        background-color: $blue-single;
+        color: $whitetext;
+        padding: 0 5px;
+        font-size: 13px;
+    }
+}
+
+
 
 
